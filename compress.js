@@ -9,7 +9,14 @@
 
 (function(window) {
 
-  window.compress = function(srcString, afterWidth, callback) {
+  /**
+   *
+   * @param origin base64 image data
+   * @param width integer width for compressed image
+   * @param callback function
+   * @returns {string} base64 image data
+   */
+  function compress(srcString, afterWidth, callback) {
     var hidCanvas = document.createElement('canvas');
     var hidCtx;
     if (hidCanvas.getContext) {
@@ -105,5 +112,5 @@
       sw * vertSquashRatio, sh * vertSquashRatio,
       dx, dy, dw, dh);
   }
-
+  window.compress = compress;
 })(window);
