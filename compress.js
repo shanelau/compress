@@ -4,7 +4,7 @@
  * @author liuxing
  *
  * 这是一个基于canvas，应用在移动端的前端图片压缩的JS。
- * Date: 2014-07-02
+ * Date: 2016-1-16
  */
 
 (function(window) {
